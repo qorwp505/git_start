@@ -91,31 +91,6 @@ def evaluate(model_name, x_test, y_test):
 
     return pred, acc
 
-def evaluate(model_name, x_test, y_test):
-    """
-    LSTM 기법으로 평가함
 
-    Parameters
-    ----------
-    model_name : str
-        모델의 이름(저장되는 파일 이름)
-    x_test : np.array
-        test 데이터의 입력
-    y_test : np.array
-        test 데이터의 출력
 
-    Returns
-    -------
-    np.array, acc
-        모델이 예측한 값들, 정확도
-
-    Raises
-    -------
-    RuntimeError
-        Model 을 찾을 수 없을 때
-    """
-
-    model = Manager.load_model_manager(model_name)
-    pred, acc = []
-
-    return pred, acc
+#수저암
